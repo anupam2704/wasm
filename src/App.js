@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import { filter, map } from 'lodash';
 import Form from './components/form/form';
-import Graph from './components/graph/graph';
+
 
 class App extends Component {
   constructor(props) {
@@ -76,12 +76,12 @@ class App extends Component {
       <div style={{marginLeft: 40}}>
         <h2>Choose a file (wasm)</h2>
         <div>        
-          <input type="file" ref={this.uploadRef} accept=".docx,.wasm" id="profile-upload" multiple={false} onChange={this.handleFileSelector} onClick={this.changeFile}/>
+          <input type="file" ref={this.uploadRef} accept=".wasm" id="profile-upload" multiple={false} onChange={this.handleFileSelector} onClick={this.changeFile}/>
         </div>
         {this.renderView()}
         <div>
         </div>
-        <Graph/>
+        
       </div>
     );
   }

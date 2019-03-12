@@ -159,6 +159,9 @@ class Form extends Component {
                         {this.renderJSONContent()}                   
                     </div>
                 </form>
+                <div style={{maginTop:  40}}>
+                        <Graph/>
+                </div>
             </div>
         )   
     }
